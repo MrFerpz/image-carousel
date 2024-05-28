@@ -12,11 +12,16 @@ body {
     width: 600px;
     height: 500px;
     border: 2px black solid;
+    position: relative;
 }
 
 .nav-bar {
     width: 600px;
     height: 100px;
+    position: absolute;
+    top: 90%;
+    display: flex;
+    justify-content: center;
 }
 
 img {
@@ -26,4 +31,37 @@ img {
 
 #img2, #img3, #img4, #img5 {
     display: none;
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 50%;
+    opacity: 0.4;
+}
+
+.left-arrow, .right-arrow {
+    background-color: grey;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: xx-large;
+    font-weight: 1000;
+}
+
+.left-arrow:hover {
+    opacity: 80%;
+}
+
+.right-arrow:hover {
+    opacity: 80%;
+}
+
+.nav-button {
+    background-color: transparent;
+    font-size: xx-large;
+    font-weight: 600;
+    border: transparent;
 }
